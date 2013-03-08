@@ -1,13 +1,13 @@
 Summary:	Python bindings for libcdio
 Name:		python-pycdio
 Version:	0.19
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://ftp.gnu.org/gnu/libcdio/pycdio-%{version}.tar.gz
 # Source0-md5:	3829879fbfc7f8d85a79c753735788f0
 URL:		http://www.gnu.org/software/libcdio/
-BuildRequires:	libcdio-devel
+BuildRequires:	libcdio-devel >= 0.90
 BuildRequires:	pkg-config
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
@@ -43,5 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{py_sitedir}/_pycdio.so
 %attr(755,root,root) %{py_sitedir}/_pyiso9660.so
 %{py_sitedir}/cdio.py[co]
+%{py_sitedir}/pycdio.py[co]
 %{py_sitedir}/iso9660.py[co]
+%{py_sitedir}/pyiso9660.py[co]
 
