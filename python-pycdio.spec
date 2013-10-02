@@ -1,11 +1,11 @@
 Summary:	Python bindings for libcdio
 Name:		python-pycdio
-Version:	0.19
-Release:	2
+Version:	0.20
+Release:	1
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://ftp.gnu.org/gnu/libcdio/pycdio-%{version}.tar.gz
-# Source0-md5:	3829879fbfc7f8d85a79c753735788f0
+# Source0-md5:	3f075574f661f49f4ede89aff9ff0cda
 URL:		http://www.gnu.org/software/libcdio/
 BuildRequires:	libcdio-devel >= 0.90
 BuildRequires:	pkg-config
